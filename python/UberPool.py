@@ -4,7 +4,11 @@ class UberPool(Car):
     brand = str
     model = str
 
-    def __init__(self, license, driver, brand, model):
-        super.__init__(license, driver)
-        self.license = license
-        self.driver = driver
+    def __init__(self, name, document, email, password, passenger, brand, model):
+        super().__init__(name, document, email, password, passenger)
+        self.brand = brand
+        self.model = model
+
+#test funcionamiento
+#car = UberPool("Angelperaza", "1033767", "angel@gmail.com", "4445566*", 4, "Chevrolet", "Onix 2020")
+#print(vars(car))
